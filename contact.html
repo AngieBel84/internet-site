@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Mon Art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contactez-moi</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Envoyez-moi un message</h2>
+      <p>Vous souhaitez acheter un tableau, commander une œuvre, ou simplement me poser une question ? Remplissez ce formulaire :</p>
+
+      <form action="mailto:ton-email@exemple.com" method="POST" enctype="text/plain">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Adresse email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Mon nom</p>
+  </footer>
+</body>
+</html>
