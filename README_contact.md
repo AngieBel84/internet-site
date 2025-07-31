@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Angela Bellini - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+  <style>
+    .contact-main {
+      margin-top: 150px; /* Ajuste selon la hauteur de ta navbar */
+    }
+
+  </style>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+         <a href="index.html">
+         <img src="images/Logo artiste.jpg" alt="Logo Angela Bellini" class="logo-img">
+        </a>
+        </div>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="artiste.html">L'artiste</a></li>
+        <li><a href="galerie.html">Les Œuvres</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="contact-main">
+    <section class="contact-section">
+      <h2>Envoyez-moi un message</h2>
+      <p>Vous souhaitez acheter un tableau, commander une œuvre, ou simplement me poser une question ? Remplissez ce formulaire :</p>
+
+      <form action="mailto:ton-email@exemple.com" method="POST" enctype="text/plain">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Adresse email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Angela Bellini</p>
+  </footer>
+</body>
+</html>
