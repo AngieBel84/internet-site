@@ -4,12 +4,70 @@
   <meta charset="UTF-8">
   <title>Ange et Diable - Angela Bellini</title>
   <link rel="stylesheet" href="style.css">
-</head>
-  <style>
+    <style>
+  
     .galerie-main {
-      margin-top: 150px; /* Ajuste selon la hauteur de ta navbar */
+      margin-top: 100px; /* Ajuste selon la hauteur de ta navbar */
     }
+  
+    .page-title {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 2em;
+    }
+    .galerie-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .oeuvre img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .oeuvre img:hover {
+      transform: scale(1.05);
+    }
+
+    .oeuvre p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* Lightbox (image en grand) */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .header {
+  padding-bottom: 100px;
+}
   </style>
+</head>
 <body>
   <header>
     <nav class="navbar">
@@ -33,11 +91,13 @@
 
     <div class="galerie-grid">
       <div class="oeuvre">
-        <img src="images/figuratif1.jpg" alt="Titre 3">
-        <p>Titre 3 – 600€</p>
+        <a href="#img1">
+          <img src="images/oeuvre1.jpg" alt="Chimeres toxiques">
+        </a>
+        <p><strong>Chimères toxiques - 2025</strong></p>
+        <p>Acrylique sur papier - 20 x 20 cm</p>
+        <p>100€</p>
       </div>
-      <!-- Tu peux ajouter plus d’œuvres ici -->
-    </div>
   </main>
 
   <footer>

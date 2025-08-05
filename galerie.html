@@ -5,9 +5,77 @@
   <title>Galerie - Mon Art</title>
   <link rel="stylesheet" href="style.css">
   <style>
+  
     .galerie-main {
-      margin-top: 60px; /* Ajuste selon la hauteur de ta navbar */
+      margin-top: 100px; /* Ajuste selon la hauteur de ta navbar */
     }
+  
+    .page-title {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 2em;
+    }
+
+    .categorie-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .categorie img {
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+      background-color: #080808; /* ou white */
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .categorie img:hover {
+      transform: scale(1.05);
+    }
+
+    .categorie h2 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .categorie p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* Lightbox (image en grand) */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .header {
+      padding-bottom: 100px;
+    }
+
   </style>
 </head>
 <body>
@@ -29,34 +97,40 @@
   </header>
 
   <main class="galerie-main">
+    <h1 class="page-title">Galerie</h1>
 
-    <h1 class="page-title"></h1>
-
-    <div class="categories-grid">
+    <div class="categorie-grid">
       <div class="categorie">
         <a href="art-et-science.html">
-          <img src="images/oeuvre2.jpg" alt="Art et Science">
+          <img class="categorie-img" src="images/oeuvre2.jpg" alt="Art et Science">
+          </a>
           <h2>Art et Science</h2>
-        </a>
       </div>
 
-      <div class="categorie">
+       <div class="categorie">
         <a href="ange-et-diable.html">
-          <img src="images/figuratif1.jpg" alt="Ange et Diable">
+          <img class="categorie-img"  src="images/une grenorange.jpg" alt="une grenorange">
+          </a>
           <h2>Ange et Diable</h2>
-        </a>
       </div>
 
       <div class="categorie">
         <a href="voyages.html">
-          <img src="images/voyage1.jpg" alt="Voyages">
+          <img class="categorie-img" src="images/Partrullo 2024.jpg" alt="Partrullo 2024">
+          </a>
           <h2>Voyages</h2>
-        </a>
+      </div>
+
+      <div class="categorie">
+        <a href="La-mer.html">
+          <img class="categorie-img" src="images/fonds marins.jpg" alt="fonds marins">
+          </a>
+          <h2>La mer</h2>
       </div>
     </div>
 
   </main>
-  </style>
+
   <footer>
     <p>&copy; 2025 - Angela Bellini</p>
   </footer>

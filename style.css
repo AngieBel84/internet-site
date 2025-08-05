@@ -1007,3 +1007,32 @@ header, .hero {
 .hero {
   margin-top: 200px; /* ajuste à ta convenance */
 }
+.categorie-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.categorie-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.categories-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.categorie {
+  width: 300px;
+  text-align: center;
+}
+.categorie a {
+  display: block;
+}
