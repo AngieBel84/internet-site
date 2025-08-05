@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ange et Diable - Angela Bellini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <style>
+    .galerie-main {
+      margin-top: 150px; /* Ajuste selon la hauteur de ta navbar */
+    }
+  </style>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Logo artiste.jpg" alt="Logo Angela Bellini" class="logo-img">
+        </a>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="artiste.html">L'artiste</a></li>
+        <li><a href="galerie.html">Les Œuvres</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="galerie-main">
+    <h1 class="page-title">Ange et Diable</h1>
+
+    <div class="galerie-grid">
+      <div class="oeuvre">
+        <img src="images/figuratif1.jpg" alt="Titre 3">
+        <p>Titre 3 – 600€</p>
+      </div>
+      <!-- Tu peux ajouter plus d’œuvres ici -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Angela Bellini</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie - Mon Art</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .galerie-main {
+      margin-top: 60px; /* Ajuste selon la hauteur de ta navbar */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Logo artiste.jpg" alt="Logo Angela Bellini" class="logo-img">
+        </a>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="artiste.html">L'artiste</a></li>
+        <li><a href="galerie.html">Les Œuvres</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="galerie-main">
+
+    <h1 class="page-title"></h1>
+
+    <div class="categories-grid">
+      <div class="categorie">
+        <a href="art-et-science.html">
+          <img src="images/oeuvre2.jpg" alt="Art et Science">
+          <h2>Art et Science</h2>
+        </a>
+      </div>
+
+      <div class="categorie">
+        <a href="ange-et-diable.html">
+          <img src="images/figuratif1.jpg" alt="Ange et Diable">
+          <h2>Ange et Diable</h2>
+        </a>
+      </div>
+
+      <div class="categorie">
+        <a href="voyages.html">
+          <img src="images/voyage1.jpg" alt="Voyages">
+          <h2>Voyages</h2>
+        </a>
+      </div>
+    </div>
+
+  </main>
+  </style>
+  <footer>
+    <p>&copy; 2025 - Angela Bellini</p>
+  </footer>
+</body>
+</html>
