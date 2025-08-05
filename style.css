@@ -1011,11 +1011,6 @@ header, .hero {
   width: 300px;
   height: 300px;
   object-fit: cover;
-}
-.categorie-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
   object-position: center;
   border-radius: 8px;
   cursor: pointer;
