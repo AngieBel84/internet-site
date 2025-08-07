@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Art et Science - Angela Bellini</title>
-  
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
   <!-- Ton CSS perso -->
@@ -73,20 +72,6 @@
       padding-bottom: 100px;
     }
     
-    .glightbox-container .gdesc-inner {
-      background-color: black !important;
-      color: rgb(126, 86, 86) !important;
-      padding: 20px;
-      font-size: 16px;
-      line-height: 1.5;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    .glightbox-container .gdesc-inner strong {
-      font-size: 18px;
-      display: block;
-      margin-bottom: 6px;
-    }
     footer {
       text-align: center;
       padding: 20px;
@@ -94,22 +79,23 @@
       color: #aaa;
     }
 
-    .glightbox-clean .gdesc {
-      background-color: #000 !important;
-      color: #fff !important;
-      padding: 20px;
-      font-size: 16px;
-      line-height: 1.5;
-      font-family: 'Montserrat', sans-serif;
-      text-align: left;
+    .glightbox-container .gdesc-inner {
+      background-color: black !important;
+      color: white !important;
+      padding: 20px !important;
+      font-size: 16px !important;
+      line-height: 1.5 !important;
+      font-family: 'Montserrat', sans-serif !important;
+      text-align: left !important;
     }
 
-    .glightbox-clean .gdesc strong {
-      font-size: 18px;
-      display: block;
-      margin-bottom: 6px;
+    .glightbox-container .gdesc-inner strong {
       color: #fff !important;
+      font-size: 18px !important;
+      display: block !important;
+      margin-bottom: 6px !important;
     }
+    
   </style>
 </head>
 
@@ -131,18 +117,19 @@
     </nav>
   </header>
 
+
   <main class="galerie-main">
     <h1 class="page-title">Art et Science</h1>
 
-    <div class="galerie-grid">
-      <div class="oeuvre">
-        <a href="images/oeuvre1.jpg" class="glightbox" data-gallery="galerie" data-title="Chimères toxiques - 2025<br>Acrylique sur papier - 20 x 20 cm<br>100€">
-          <img src="images/oeuvre1.jpg" alt="Chimères toxiques">
-        </a>
-        <p><strong>Chimères toxiques - 2025</strong></p>
-        <p>Acrylique sur papier - 20 x 20 cm</p>
-        <p>100€</p>
-      </div>
+  <div class="galerie-grid">
+    <div class="oeuvre">
+      <a href="images/oeuvre1.jpg" class="glightbox" data-gallery="galerie" data-title="Chimères toxiques - 2025<br>Acrylique sur papier - 20 x 20 cm<br>100€">
+        <img src="images/oeuvre1.jpg" alt="Chimères toxiques">
+      </a>
+      <p><strong>Chimères toxiques - 2025</strong></p>
+      <p>Acrylique sur papier - 20 x 20 cm</p>
+      <p>100€</p>
+    </div>
 
       <div class="oeuvre" >
         <a href="images/oeuvre2.jpg" class="glightbox" data-gallery="galerie" data-title="La cicatrie de la terre - 2025<br>Acrylique sur papier - 20 x 20 cm<br>100€">
@@ -165,7 +152,7 @@
       <div class="oeuvre">
         <a href="images/autoflagellation.jpg" class="glightbox" data-gallery="galerie" data-title="Autoflagellation - 2021<br>Acrylique sur papier entoilé - 41 x 33 cm<br>500€">
           <img src="images/autoflagellation.jpg" alt="Autoflagellation">
-      </a>
+        </a>
         <p><strong>Autoflagellation - 2021</strong></p>
         <p>Acrylique sur papier entoilé - 41 x 33 cm</p>
         <p>500€</p>
