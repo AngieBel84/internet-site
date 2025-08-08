@@ -16,7 +16,7 @@
     }
   
     .galerie-main {
-      margin-top: 100px; /* Ajuste selon la hauteur de ta navbar */
+      margin-top: 150px; /* Ajuste selon la hauteur de ta navbar */
     }
   
     .page-title {
@@ -33,6 +33,16 @@
       padding: 20px;
     }
 
+    .oeuvre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px; /* même taille que l’image */
+        /* Ne pas fixer la hauteur, ou laisser auto */
+      overflow: visible; /* important si overflow caché */
+    }
+
+
     .oeuvre img {
       width: 300px;
       height: 300px;
@@ -46,8 +56,10 @@
     }
 
     .oeuvre p {
+      color: #333;
       text-align: center;
-      margin-top: 10px;
+      margin: 5px 0;
+      font-size: 14px;
     }
 
     .header {
