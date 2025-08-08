@@ -9,21 +9,61 @@
   <style>
 
       .hero {
-        display: flex !important;
-        justify-content: center !important;
+        position: relative;
         align-items: center !important;
         height: 100vh !important;
+        overflow: hidden;
     }
 
-      .hero-text {
-        position: relative !important;
-        z-index: 1 !important;
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 22px 30px;
+      border-radius: 10px;
+      max-width: 90%;
+      box-sizing: border-box;
     }
 
-      .hero-text {
-        position: relative !important;
-        z-index: 1 !important;
+      .hero-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+        width: 100%;
+        height: 100%;
     }
+
+      .hero-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
 
     @media (max-width: 768px) {
       .hero {
@@ -35,7 +75,7 @@
         font-size: 2em;
       }
     }
-    
+
   </style>
 </head>
 <body>
@@ -52,15 +92,28 @@
         <li><a href="artiste.html">L'artiste</a></li>
         <li><a href="galerie.html">Les Œuvres</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="ses-expositions.html">Ses expositions</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
+        <div class="hero-images">
+    <img src="images/angela-atelier.jpg" alt="Image 1">
+    <img src="images/photo_galerie213_3.jpg" alt="Image 2">
+    <img src="images/angela-labo.jpg" alt="Image 3">
+  </div>
+
       <div class="hero-text">
         <h1>Bienvenue dans l'univers d’Angela Bellini</h1>
         <p>Peindre l’essentiel, révéler l’invisible entre science, art et voyages.</p>
+
+      <div class="hero-buttons">
+        <a href="artiste.html" class="btn">Qui est-elle</a>
+        <a href="galerie.html" class="btn">Ses toiles</a>
+  </div>
+</div>
       </div>
     </section>
   </main>

@@ -10,7 +10,54 @@
 </head>  
   <style>
     .artiste-section {
-      margin-top: 100px; /* Ajuste selon la hauteur de ta navbar */
+      margin-top: 120px; !important;
+    }
+    
+    .container {
+      display: flex;
+      gap: 40px; /* espace entre image et texte */
+      align-items: flex-start; /* alignement en haut */
+      max-width: 1000px; /* limite la largeur max de la section */
+      margin: 0 auto; /* centre horizontalement la section */
+      padding: 0 20px;
+    }
+
+    .bio-image {
+      flex: 0 0 350px; /* largeur fixe de l'image */
+    }
+
+    .bio-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px; /* coins arrondis optionnels */
+      display: block;
+    }
+
+    .bio-text {
+      flex: 1; /* prend tout l'espace restant */
+      background-color: rgba(255, 255, 255, 0.1); /* léger fond transparent (optionnel) */
+      padding: 20px;
+      border-radius: 8px;
+      color: #333; /* texte blanc */
+      font-family: 'Montserrat', sans-serif;
+      box-sizing: border-box;
+      text-align: justify;
+      box-sizing: border-box;
+    }
+
+    .bio-box p {
+      margin-bottom: 1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      color: #aaa;
+    }
+
+    .artiste-section {
+      margin-top: 20px; /* Ajuste selon la hauteur de ta navbar */
     }
 
   </style>
@@ -28,12 +75,13 @@
         <li><a href="artiste.html">L'artiste</a></li>
         <li><a href="galerie.html">Les Œuvres</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="ses-expositions.html">Ses expositions</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-<section class="artiste-section">
+  <section class="artiste-section">
   <div class="container">
     
     <!-- Image portrait à gauche -->
@@ -71,6 +119,9 @@
 
   </div>
 </section>
+</main>
 
-
+  <footer>
+    <p>&copy; 2025 - Angela Bellini</p>
+  </footer>
 
